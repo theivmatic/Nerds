@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "Roboto", "Arial", sans-serif ;
+    font-size: ;
+    line-height: ;
+    font-weight: ;
+    color: ;
+    text-transform: ;
+}
+
+header {
+    background-image: url(png/grey\ back.png);
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+li {
+    list-style-type: none;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+.slider {
+    background-image: url(png/grey\ back.png);
+}
+
+.know-more {
+    background-color: #FB565A;
+    color: #FFFFFF;
+}
+
+.order-website {
+
+    background-color: #FB565A;
+    color: #FFFFFF;
+}
+
+.order-apps {
+    background-color: #00CA74;
+    color: #FFFFFF;
+}
+
+.order-pres {
+    background-color: #EFC84A;
+    color: #FFFFFF;
+}
+
+.slider-text {
+    color: #283136;
+}
+
+.serv-text {
+    color: #283136;
+}
+
+.contacts {
+    background-image: url(png/map.png);
+}
+
+/* Разобрвться почему переписывает 
+.contacts-text {
+    background-image: url(png/aboutusback.png);
+}
+*/
+
+.about-us-text {
+    color: #283136;
+}
+
+.about-us-ul {
+    color: #283136;
+}
+
+.about-us-dd {
+    color: #283136;
+}
+
+.adress {
+    color: #666666;
+}
+
+.discount {
+    color: #444444;
+}
