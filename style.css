@@ -13,10 +13,6 @@ body {
     height: 2476px;
 }
 
-header {
-    /*background-image: url(png/grey\ back.png);*/
-}
-
 a {
     text-decoration: none;
     color: #000000;
@@ -56,7 +52,36 @@ dd {
 .clients,
 .catalog {
     margin-right: 40px;
-    margin-top: ;
+}
+
+
+
+.studio:hover,
+.clients:hover,
+.catalog:hover,
+.contacts:hover,
+.cart:hover {
+    color: #FB565A;
+}
+
+.studio:focus,
+.clients:focus,
+.catalog:focus,
+.contacts:focus,
+.cart:focus {
+    text-decoration: underline;
+    text-decoration-color: #FB565A  ;   
+    outline: none;
+}
+
+.studio:active,
+.clients:active,
+.catalog:active,
+.contacts:active,
+.cart:active {
+    color: #000000;
+    opacity: 30%;
+    text-decoration: none;
 }
 
 .user-nav {
@@ -87,12 +112,19 @@ dd {
     margin-top: 48px;
 }
 
+.main-logo:hover{
+    opacity: 80%;
+}
+
+.main-logo:active {
+    opacity: 30%;
+}
+
 .grey-back {
     background-image: url(png/biggray.png);
 }
 
 .slider {
-    /*background-image: url(png/grey\ back.png);*/
     display: flex;
     padding-left: 140px;
     margin-bottom: 160px;
@@ -123,7 +155,15 @@ dd {
     padding-top: 13px;
     padding-bottom: 19px;
 }
+
+.know-more:hover {
+    background-color: #E74246;
+}
     
+.know-more:active {
+    background-color: #D7373B;
+}
+
 .services-flex {
     display: flex;
     padding-left: 140px;
@@ -173,14 +213,38 @@ dd {
     color: #FFFFFF;
 }
 
+.order-website:hover {
+    background-color: #E74246;
+}
+
+.order-website:active {
+    background-color: #D7373B;
+}
+
 .order-apps {
     background-color: #00CA74;
     color: #FFFFFF;
 }
 
+.order-apps:hover {
+    background-color: #00BC6C;
+}
+
+.order-apps:active {
+    background-color: #00AA62;
+}
+
 .order-pres {
     background-color: #EFC84A;
     color: #FFFFFF;
+}
+
+.order-pres:hover {
+    background-color: #EAB534;
+}
+
+.order-pres:active {
+    background-color: #E5A722;
 }
 
 .about-us-flex {
@@ -190,6 +254,7 @@ dd {
 
 .a-u2 {
     margin-left: 150px;
+    
 }
 
 .nerds-logo {
@@ -258,24 +323,60 @@ dd {
 
 .html-logo {
     width: 199px;
+    opacity: 20%;
+}
+
+.html-logo:hover {
+    opacity: 100%;
+}
+
+.html-logo:active {
+    opacity: 10%;
 }
 
 .borod-logo {
     width: 209px;
     margin-left: 96px;
+    opacity: 20%;
+}
+
+.borod-logo:hover {
+    opacity: 100%;
+}
+
+.borod-logo:active {
+    opacity: 10%;
 }
 
 .pink-logo {
     width: 185px;
     margin-left: 103px;
+    opacity: 20%;
+}
+
+.pink-logo:hover {
+    opacity: 100%;
+}
+
+.pink-logo:active {
+    opacity: 10%;
 }
 
 .mishka-logo {
     width: 173px;
     margin-left: 121px;
+    opacity: 20%;
 }
 
-.contacts {
+.mishka-logo:hover {
+    opacity: 100%;
+}
+
+.mishka-logo:active {
+    opacity: 10%;
+}
+
+.footer-contacts {
     background-image: url(png/map.png);
     height: 417px;
     width: 1442px;
@@ -291,10 +392,19 @@ dd {
     background-color: FB565A;
     color: FFFFFF; 
     padding-top: 13px;
-    padding-bottom: 19px;
+    padding-bottom: 15px;
     padding-right: 46px;
     padding-left: 45px;
     border-radius: 5px;
+    border-style: none;
+}
+
+.write-us:hover {
+    background-color: #E74246;
+}
+
+.write-us:active {
+    background-color: #D7373B;
 }
 
 .footer-h {
@@ -328,8 +438,23 @@ dd {
     margin-bottom: 66px;
 }
 
-.social-a {
+.social-button {
+    display: flex;
     margin-right: 10px;
+    background-color: #E1E1E1;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 81px;
+    height: 81px;
+}
+
+.social-button:hover {
+    background-color: #E74246;
+}
+
+.social-button:active {
+    background-color: #D7373B;
 }
 
 .discount {
