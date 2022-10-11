@@ -14,7 +14,7 @@ body {
 }
 
 header {
-    background-image: url(png/grey\ back.png);
+    /*background-image: url(png/grey\ back.png);*/
 }
 
 a {
@@ -45,23 +45,54 @@ dd {
 .site-nav {
     margin: 0;
     margin-left: 190px;
+    margin-top: 70px;
     padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.studio,
+.clients,
+.catalog {
+    margin-right: 40px;
+    margin-top: ;
 }
 
 .user-nav {
     margin: 0;
     margin-left: 180px;
+    margin-top: 70px;
     padding: 0;
+    padding-left: 40px;
+    position: relative;
+
 }
 
+.cart::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    
+    position: absolute;
+    background-image: url(png/cart-icon.png);
+    background-repeat: no-repeat;
+    top: 3px;
+    left: 12;
+}
 
 .main-logo {
     width: 160;
     height: 67;
+    margin-top: 48px;
+}
+
+.grey-back {
+    background-image: url(png/biggray.png);
 }
 
 .slider {
-    background-image: url(png/grey\ back.png);
+    /*background-image: url(png/grey\ back.png);*/
     display: flex;
     padding-left: 140px;
     margin-bottom: 160px;
@@ -104,11 +135,17 @@ dd {
     margin: 0;
 }
 
+.web-site {
+    width: 300px;
+}
+
 .apps {
+    width: 300px;
     margin-left: 100px;
 }
 
 .presentations {
+    width: 300px;
     margin-left: 100px;
 }
 
@@ -151,10 +188,6 @@ dd {
     margin-left: 140px;
 }
 
-.a-u {
-    
-}
-
 .a-u2 {
     margin-left: 150px;
 }
@@ -162,6 +195,7 @@ dd {
 .nerds-logo {
     width: 360px;
     height: 208px;
+    margin-bottom: 40px;
 }
 
 .li-item {
@@ -189,11 +223,29 @@ dd {
     color: #283136;
 }
 
+.ul-number {
+    display: flex;
+}
+
+.ul-number-ul {
+    margin: 0;
+    padding: 0;
+    padding-left: 17px;
+}
+
+.ul-number-text {
+    display: block;
+    margin-bottom: 55px;
+}
+
 .li-number {
+    padding-right: ;
     font-size: 45;
+    margin-bottom: 13px;
 }
 
 .percent {
+    margin-right: 20px;
     font-size: 26;
 }
 
@@ -204,15 +256,22 @@ dd {
     margin-bottom: 76px;
 }
 
+.html-logo {
+    width: 199px;
+}
+
 .borod-logo {
+    width: 209px;
     margin-left: 96px;
 }
 
 .pink-logo {
+    width: 185px;
     margin-left: 103px;
 }
 
 .mishka-logo {
+    width: 173px;
     margin-left: 121px;
 }
 
@@ -223,15 +282,9 @@ dd {
 }
 
 .contacts-text {
-    width: 319px;
-    height: 308px;
-    background-image: url(png/white\ back.png);
-
-    margin-left: 90px;
-    padding-left: 50px;
-    padding-right: 59px;
-    padding-top: 40px;
-    padding-bottom: 47px;
+    
+    padding-left: 200px;
+    padding-top: 90px;
 }
 
 .write-us {
@@ -266,6 +319,17 @@ dd {
 .footer-flex {
     display: flex;
     margin-left: 140px;
+    margin-top: 72px;
+}
+
+.social-media-flex {
+    display: flex;
+    margin-right: 129px;
+    margin-bottom: 66px;
+}
+
+.social-a {
+    margin-right: 10px;
 }
 
 .discount {
