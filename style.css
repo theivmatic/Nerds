@@ -1,5 +1,5 @@
 body {
-    margin: 0;
+    margin: auto auto;
     padding: 0;
 
     font-family: "Roboto", "Arial", sans-serif ;
@@ -48,40 +48,30 @@ dd {
     flex-wrap: wrap;
 }
 
-.studio,
-.clients,
-.catalog {
+.site-nav a {
     margin-right: 40px;
 }
 
-
-
-.studio:hover,
-.clients:hover,
-.catalog:hover,
-.contacts:hover,
-.cart:hover {
+.site-nav a:hover {
     color: #FB565A;
 }
 
-.studio:focus,
-.clients:focus,
-.catalog:focus,
-.contacts:focus,
-.cart:focus {
-    text-decoration: underline;
-    text-decoration-color: #FB565A  ;   
+.site-nav a:focus {
+    border: 2px #FB565A;
+    border-style: solid;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
     outline: none;
+    padding-bottom: 23px;
+
 }
 
-.studio:active,
-.clients:active,
-.catalog:active,
-.contacts:active,
-.cart:active {
+.site-nav a:active {
     color: #000000;
     opacity: 30%;
     text-decoration: none;
+    border-bottom: transparent;
 }
 
 .user-nav {
@@ -91,25 +81,44 @@ dd {
     padding: 0;
     padding-left: 40px;
     position: relative;
-
 }
 
-.cart::before {
+.user-nav a:hover {
+    color: #FB565A;
+}
+
+.user-nav a:focus {
+    border: 2px #FB565A;
+    border-style: solid;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    outline: none;
+    padding-bottom: 23px;
+}
+
+.user-nav a:active {
+    color: #000000;
+    opacity: 30%;
+    text-decoration: none;
+}
+
+.user-nav::before {
     content: "";
     width: 15px;
     height: 15px;
-    
     position: absolute;
     background-image: url(png/cart-icon.png);
     background-repeat: no-repeat;
     top: 3px;
-    left: 12;
+    left: 12px;
 }
 
 .main-logo {
     width: 160;
     height: 67;
     margin-top: 48px;
+    margin-right: 28px;
 }
 
 .main-logo:hover{
@@ -146,22 +155,34 @@ dd {
     margin-bottom: 40px;
 }
 
-.know-more {
+.slider a {
+    display: inline-block;
     background-color: #FB565A;
     color: #FFFFFF;
+    width: 240px;
+    height: 50px;
     border-radius: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 13px;
-    padding-bottom: 19px;
+    text-align: center;
 }
 
-.know-more:hover {
+.slider a:hover {
     background-color: #E74246;
 }
     
-.know-more:active {
+.slider a:active {
     background-color: #D7373B;
+    box-shadow: 0px 3px 0px 0px #C23235 inset;
+}
+
+.button-text {
+    display: inline-block;
+    margin-top: 13px;
+}
+
+.services h3 {
+    margin-top: 20px;
+    font-size: 24;
+    font-weight: bold;
 }
 
 .services-flex {
@@ -189,62 +210,66 @@ dd {
     margin-left: 100px;
 }
 
-.serv-h {
-    margin-top: 20px;
-    font-size: 24;
-    font-weight: bold;
-}
-
 .serv-text {
     color: #283136;
 }
 
-.order-website, 
-.order-apps,
-.order-pres {
-    padding: 40px;
-    padding-top: 13px;
-    padding-bottom: 19px;
-    border-radius: 5px;
-}
-
-.order-website {
+.web-site a {
+    display: inline-block;
     background-color: #FB565A;
     color: #FFFFFF;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.order-website:hover {
+.web-site a:hover {
     background-color: #E74246;
 }
 
-.order-website:active {
+
+.web-site a:active {
     background-color: #D7373B;
+    box-shadow: 0px 3px 0px 0px #C23235 inset;
 }
 
-.order-apps {
+.apps a {
+    display: inline-block;
     background-color: #00CA74;
     color: #FFFFFF;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.order-apps:hover {
+.apps a:hover {
     background-color: #00BC6C;
 }
 
-.order-apps:active {
+.apps a:active {
     background-color: #00AA62;
+    box-shadow: 0px 3px 0px 0px #009958 inset;
 }
 
-.order-pres {
+.presentations a {
+    display: inline-block;
     background-color: #EFC84A;
     color: #FFFFFF;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    text-align: center;
 }
 
-.order-pres:hover {
+.presentations a:hover {
     background-color: #EAB534;
 }
 
-.order-pres:active {
+.presentations a:active {
     background-color: #E5A722;
+    box-shadow: 0px 3px 0px 0px #CF971F inset;
 }
 
 .about-us-flex {
@@ -252,9 +277,8 @@ dd {
     margin-left: 140px;
 }
 
-.a-u2 {
+.about-us-flex .right-column {
     margin-left: 150px;
-    
 }
 
 .nerds-logo {
@@ -268,20 +292,25 @@ dd {
     list-style-image: url(png/li.png);
 }
 
-.about-us-h {
+.about-us h3 {
     font-size: 45;
     margin-bottom: 31px;
 }
 
-.about-us-text {
+.about-us-flex p {
     color: #283136;
     margin-bottom: 41px;
 }
 
-.about-us-ul {
+.about-us-flex ul {
     color: #283136;
     padding: 0;
     margin: 0;
+}
+
+.about-us-flex span {
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .about-us-dd {
@@ -316,14 +345,40 @@ dd {
 
 .partners-flex {
     display: flex;
+    width: 1160px;
     margin-left: 140px;
     margin-top: 140px;
     margin-bottom: 76px;
+
+    border: #efeeee;
+    opacity: ;
+    border-left: transparent;
+    border-right: transparent;
+    border-style: solid;
+    border-radius: 2px;
+    padding-top: 46px;
+    padding-bottom: 44px;
+
+    position: relative;
 }
 
 .html-logo {
     width: 199px;
     opacity: 20%;
+}
+
+.html-logo::after {
+    content: "";
+    width: 2px;
+    height: 52px;
+    
+    position: absolute;
+    background-image: url(png/vertical-divide.png);
+    background-color: #efeeee;
+    background-repeat:no-repeat;
+    left: 250px;
+    top: 66px;
+    
 }
 
 .html-logo:hover {
@@ -382,34 +437,34 @@ dd {
     width: 1442px;
 }
 
+.footer-contacts h3 {
+    font-size: 18px;
+    margin-bottom: 37px;
+    text-transform: uppercase;
+}
+
 .contacts-text {
-    
     padding-left: 200px;
     padding-top: 90px;
 }
 
-.write-us {
-    background-color: FB565A;
-    color: FFFFFF; 
-    padding-top: 13px;
-    padding-bottom: 15px;
-    padding-right: 46px;
-    padding-left: 45px;
+.footer-contacts a {
+    display: inline-block;
+    background-color: #FB565A;
+    color: #FFFFFF;
+    width: 219px;
+    height: 50px;
     border-radius: 5px;
-    border-style: none;
+    text-align: center;
 }
 
-.write-us:hover {
+.footer-contacts a:hover {
     background-color: #E74246;
 }
 
-.write-us:active {
+.footer-contacts a:active {
     background-color: #D7373B;
-}
-
-.footer-h {
-    font-size: 18;
-    margin-bottom: 37px;
+    box-shadow: 0px 3px 0px 0px #C23235 inset;
 }
 
 .footer-text {
