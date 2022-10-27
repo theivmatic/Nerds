@@ -13,14 +13,14 @@
           <nav class="main-navigation">
             <img class="main-logo" src="svg/nerds-logo.svg" alt="Логотип Nerds">
             <ul class="site-nav">
-              <li><a class="studio" href="">Студия</a></li>
-              <li><a class="clients" href="">Клиенты</a></li>
-              <li><a class="catalog" href="">Магазин</a></li>
-              <li><a class="contacts" href="">Контакты</a></li>
+              <li><a href="">Студия</a></li>
+              <li><a href="">Клиенты</a></li>
+              <li><a href="">Магазин</a></li>
+              <li><a href="">Контакты</a></li>
             </ul>
 
             <ul class="user-nav">
-              <li><a class="cart" href="">Корзина</a></li>
+              <li><a href="">Корзина</a></li>
             </ul>
           </nav>
       </header>
@@ -28,20 +28,41 @@
       <main>
         <section class="slider">
           <div>
-            <p class="slider-h"><b>Долго, дорого,<br>
-            скурпулезно.</b></p>
-            <p class="slider-text">Математически выверенный дизайн<br>
+            <h3><b>Долго, дорого,<br>
+            скурпулезно.</b></h3>
+            <p>Математически выверенный дизайн<br>
             для вашего сайта или мобильного приложения.</p>
             <p><a href=""><span class="button-text">Узнать больше</span></a></p>
           </div>
-        <img class="slider-img1" src="png/slide1.png">
-        
+          <img class="slider-img1" src="png/slide.png">
+          <div class="slider-nav__wrap">
+            <div class="slider-nav">
+              <label>
+                <input checked type="radio" class="radio-button" name="slide" value="1st-slide" aria-label="Первый слайд">
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+
+            <div class="slider-nav">
+              <label>
+                <input type="radio" class="radio-button" name="slide" value="2nd-slide" aria-label="Второй слайд">
+                <span class="custom-radio"></span>
+              </label>
+            </div>  
+
+            <div class="slider-nav">
+              <label>
+                <input type="radio" class="radio-button" name="slide" value="3rd-slide" aria-label="Третий слайд">
+                <span class="custom-radio"></span>
+              </label>
+            </div>
+          </div>
         </section>
     </div>
-
+    
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
-        <ul class="serv-ul">
+        <ul>
           <div class="services-flex">
             <li class="web-site">
               <img class="ws-img" src="png/website.png">
@@ -87,7 +108,7 @@
 
           <div class="right-column">
             <img class="nerds-logo" src="png/logo2.png">
-            <ul class="ul-number-ul"> <span class="ul-number-text">С 2004 года Любим точность во всем: </span>
+            <ul><h3>С 2004 года Любим точность во всем:</h3>
               <div class="ul-number">
                 <li><dt><b><span class="li-number">146</span></b><sup><span class="percent"><sup>%</sup></span></sup></dt>
                 <dd class="about-us-dd">Уровень<br>самоотдачи</dd>
@@ -110,26 +131,26 @@
         <ul> 
           <title>Партнеры</title>
           <div class="partners-flex">
-            <li class="html-logo">
-              <a href="" aria-label="Ссылка HTMLAcademy">
+            <li class="partners-flex-item">
+              <a class="html-logo" href="" aria-label="Ссылка HTMLAcademy">
                 <img src="png/htmlacademylogo.png">
               </a>
             </li>
 
-            <li class="borod-logo">
-              <a href="" aria-label="Ссылка Бородинский">
+            <li class="partners-flex-item">
+              <a class="borod-logo" href="" aria-label="Ссылка Бородинский">
                 <img src="png/borodinskylogo.png">
               </a>
             </li>
 
-            <li class="pink-logo">
-              <a href="" aria-label="Ссылка Pink">
+            <li class="partners-flex-item">
+              <a class="pink-logo" href="" aria-label="Ссылка Pink">
                 <img src="png/pinklogo.png">
               </a>
             </li>
 
-            <li class="mishka-logo">
-              <a href="" aria-label="Ссылка Mishka">
+            <li class="partners-flex-item">
+              <a class="mishka-logo" href="" aria-label="Ссылка Mishka">
                 <img src="png/mishkalogo.png">
               </a>
             </li>
