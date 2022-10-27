@@ -3,7 +3,6 @@ body {
     padding: 0;
 
     font-family: "Roboto", "Arial", sans-serif ;
-    font-size: 16;
     width: 1440px;
     height: 2476px;
 }
@@ -15,10 +14,6 @@ a {
 
 li {
     list-style-type: none;
-}
-
-dd {
-    margin: 20 0 40 0;
 }
 
 .visually-hidden {
@@ -212,6 +207,10 @@ dd {
     transform: translate(-50%, -50%) scale(1);
 }
 
+.button:hover {
+
+}
+
 .button-text {
     display: inline-block;
     margin-top: 13px;
@@ -226,7 +225,6 @@ dd {
 .services h3 {
     margin-top: 20px;
     font-size: 24;
-    font-weight: bold;
     text-transform: uppercase;
 }
 
@@ -261,7 +259,7 @@ dd {
     font-weight: 400;
 }
 
-.web-site a {
+.button {
     display: inline-block;
     background-color: #FB565A;
     color: #FFFFFF;
@@ -282,13 +280,7 @@ dd {
 }
 
 .apps a {
-    display: inline-block;
     background-color: #00CA74;
-    color: #FFFFFF;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    text-align: center;
 }
 
 .apps a:hover {
@@ -301,13 +293,7 @@ dd {
 }
 
 .presentations a {
-    display: inline-block;
     background-color: #EFC84A;
-    color: #FFFFFF;
-    width: 150px;
-    height: 50px;
-    border-radius: 5px;
-    text-align: center;
 }
 
 .presentations a:hover {
@@ -366,6 +352,7 @@ dd {
 .about-us-dd {
     color: #283136;
     font-weight: 300;
+    margin: 20 0 40 0;
 }
 
 .ul-number {
@@ -434,36 +421,10 @@ dd {
     opacity: 20%;
 }
 
-.html-logo:hover {
-    opacity: 100%;
-}
-
-.html-logo:focus {
-    opacity: 100%;
-    outline: none;
-}
-
-.html-logo:active {
-    opacity: 10%;
-}
-
 .borod-logo {
     width: 209px;
     margin-left: 96px;
     opacity: 20%;
-}
-
-.borod-logo:hover {
-    opacity: 100%;
-}
-
-.borod-logo:focus {
-    opacity: 100%;
-    outline: none;
-}
-
-.borod-logo:active {
-    opacity: 10%;
 }
 
 .pink-logo {
@@ -472,37 +433,34 @@ dd {
     opacity: 20%;
 }
 
-.pink-logo:hover {
-    opacity: 100%;
-}
-
-.pink-logo:focus {
-    opacity: 100%;
-    outline: none;
-}
-
-.pink-logo:active {
-    opacity: 10%;
-}
-
 .mishka-logo {
     width: 173px;
     margin-left: 121px;
     opacity: 20%;
 }
 
+.html-logo:hover,
+.borod-logo:hover,
+.pink-logo:hover,
 .mishka-logo:hover {
     opacity: 100%;
 }
 
+.html-logo:focus,
+.borod-logo:focus,
+.pink-logo:focus,
 .mishka-logo:focus {
     opacity: 100%;
     outline: none;
 }
 
+.html-logo:active,
+.borod-logo:active,
+.pink-logo:active,
 .mishka-logo:active {
     opacity: 10%;
 }
+
 
 .footer-contacts {
     background-image: url(png/map.png);
@@ -512,7 +470,6 @@ dd {
 
 .footer-contacts h3 {
     font-size: 18px;
-    font-weight: 700;
     margin-bottom: 37px;
     text-transform: uppercase;
 }
